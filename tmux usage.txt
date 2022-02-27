@@ -8,3 +8,4 @@
     > tmux attach -t mysession
 5. When you are finished with the session, stop it
     > tmux kill-session -t mysession
+
