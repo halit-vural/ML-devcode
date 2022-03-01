@@ -33,11 +33,35 @@ SageMaker Studio
     Automatic model generation
         Get accurate models with full visibility
 
+Canvas
+    Zero coding
+    Develop ML models
+
+Ground Truth
+    Labeling jobs
+
+Notebook
+    Notebook instance > new instances (Jupyter)
+
+Training jobs
+    3-4 minutes training
+    used for building models
+
+SageMaker Pricing
+    free tier
+        first 2 months after registration
+            studio/notebooks
+                250 hrs of ml.t3.medium instance
+            training
+                50 hrs of m4.xlarge or m5.xlarge instances
+
 
 === AWS SageMaker demo (hands-on) ===
-
 login AWS management console
 open SageMaker
+Notebook (on left menu)  > Notebook instances
+
+
 open studio (left menu)
 
 
