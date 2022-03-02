@@ -32,17 +32,15 @@ VS Code
             >docker container ls
             >docker pull ubuntu #install ubuntu for my environment
             >docker image ls    #list my new ubuntu image
-            
             activate environment again
             >docker run -it --name myubuntu ubuntu #create a new container including my ubuntu image (name it as myubuntu [optional])
-            
             now we're in our new container
-            if there's not python, we should install it
-            >apt-get update -y      #install ubuntu update (-y >> yes prompt)
-            >apt-get install python3
-            >apt-get install python3-pip
-            >pip3 install pandas
-            close terminal (X) veya >exit
+                if there's not python, we should install it
+                >apt-get update -y      #install ubuntu update (-y >> yes prompt)
+                >apt-get install python3
+                >apt-get install python3-pip
+                >pip3 install pandas
+                close terminal (X) veya >exit
 
             we're in ec2-user bash terminal
             >sudo docker ps     #check docker
@@ -73,10 +71,11 @@ VS Code
             we're in terminal (container) again
             >ls -lhtr       #list all files in our systemctl
 
-        --- volume setup for content safety---
+--- volume setup for content safety---
         in ec2-user terminal
             >docker run -it -d --name mycontainer2 ubuntu    #a new container
             #-d > detach flag, so we are out of new container
+            still in ec2-user
             >docker ps      #list running containers
             we see our new container running
             >docker ps -a   #list all
@@ -126,7 +125,11 @@ VS Code
         >sudo cat my_path/my_folder/test_file3.txt
         # that will list the content of my file
         now if we destroy our container, the files/content of it will stay
-        
+
+
+------- automate docker preparation ---------
+
+
 
 
 
